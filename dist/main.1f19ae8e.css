@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+ol,
+li {
+  list-style: none;
+}
+body {
+  overflow: hidden;
+}
+
+.global > section {
+  width: 50vw;
+  height: 50vh;
+}
+.global {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.app1 {
+  border: 1px solid red;
+  width: 50vw;
+  height: 50vh;
+}
+
+.app2 {
+  border: 1px solid black;
+}
+.tab {
+  border: solid black;
+  display: flex;
+  flex-direction: row;
+}
+.tab > li {
+  border: solid black;
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+}
+.tab > li.bkg {
+  background-color: teal;
+}
+.tabContent > li.active {
+  display: block;
+}
+.tabContent > li {
+  display: none;
+  border: 1px solid yellow;
+}
+
+.app3 {
+  border: 1px solid yellow;
+  width: 50vw;
+  height: 50vh;
+}
+.app3 > div {
+  border: 1px solid black;
+  width: 100px;
+  display: flex;
+  margin-left: 50%;
+  transform: translate(-200px);
+  height: 100px;
+  margin-top: 10vw;
+  transition: transform 1s;
+}
+.app3 > .square.run {
+  transform: translateX(100px);
+}
+
+.app4 {
+  border: blue 1px solid;
+  width: 50vw;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+}
+@keyframes change {
+  0% {
+    background-color: blue;
+  }
+  10% {
+    background-color: red;
+  }
+  20% {
+    background-color: darkgoldenrod;
+  }
+  30% {
+    background-color: yellowgreen;
+  }
+  40% {
+    background-color: lightseagreen;
+  }
+  50% {
+    background-color: chartreuse;
+  }
+  60% {
+    background-color: grey;
+  }
+  70% {
+    background-color: darkgreen;
+  }
+
+  80% {
+    background-color: coral;
+  }
+  90% {
+    background-color: darkmagenta;
+  }
+  100% {
+    background-color: darkslategray;
+  }
+}
+.app4 .circle {
+  margin-top: 10vh;
+  border: solid 1px red;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+.app4 .circle.active {
+  animation: change 3s infinite alternate;
+}
+
+
+/*# sourceMappingURL=/main.1f19ae8e.css.map */

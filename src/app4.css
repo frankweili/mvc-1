@@ -1,0 +1,53 @@
+.app4 {
+  border: blue 1px solid;
+  width: 50vw;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+}
+@keyframes change {
+  0% {
+    background-color: blue;
+  }
+  10% {
+    background-color: red;
+  }
+  20% {
+    background-color: darkgoldenrod;
+  }
+  30% {
+    background-color: yellowgreen;
+  }
+  40% {
+    background-color: lightseagreen;
+  }
+  50% {
+    background-color: chartreuse;
+  }
+  60% {
+    background-color: grey;
+  }
+  70% {
+    background-color: darkgreen;
+  }
+
+  80% {
+    background-color: coral;
+  }
+  90% {
+    background-color: darkmagenta;
+  }
+  100% {
+    background-color: darkslategray;
+  }
+}
+.app4 .circle {
+  margin-top: 10vh;
+  border: solid 1px red;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+.app4 .circle.active {
+  animation: change 3s infinite alternate;
+}

@@ -1,0 +1,24 @@
+.app2 {
+  border: 1px solid black;
+}
+.tab {
+  border: solid black;
+  display: flex;
+  flex-direction: row;
+}
+.tab > li {
+  border: solid black;
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+}
+.tab > li.bkg {
+  background-color: teal;
+}
+.tabContent > li.active {
+  display: block;
+}
+.tabContent > li {
+  display: none;
+  border: 1px solid yellow;
+}
